@@ -1,0 +1,27 @@
+.detail-data-container {
+    position: relative;
+    div {
+      display: none;
+      position: absolute;
+      top: 85%;
+      width: 150%;
+      left: 50%;
+      transform-origin: left;
+      background-color: #435a78;
+      z-index: 2;
+      min-width: 100%;
+      padding: 1rem;
+      border: 1px solid black;
+      table {
+        width: 100%;
+        tbody tr th {
+          text-align: left;
+          padding-left: 10px;
+        }
+    }
+  }
+  }
+  
+  .detail-data-container:hover div {
+    display: block;
+  }

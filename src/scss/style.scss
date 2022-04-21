@@ -1,0 +1,43 @@
+@import './color.scss';
+@import './font.scss';
+@import './popUpTable.scss';
+@import './loadingEvent.scss';
+
+*{
+  font-family: 'avinirNext';
+  font-size: 14px;
+}
+#finance-table{
+  border-collapse: collapse;
+  width: 100%;
+  color: white;
+  thead{
+    background-color: $table-header-color;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  td, th {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: right;
+  }
+  td:first-child, th:first-child{
+    text-align: left;
+  }
+  .first-row:not(:last-child){
+    border-bottom-style:hidden;
+    text-align: right;
+  }
+  .first-row:last-child{
+    text-align: center;
+  }
+  tbody{
+    background-color: $table-color;
+    td:hover{
+      background-color: $hover-color;
+    }
+  }
+}
+
+
