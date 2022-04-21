@@ -2,6 +2,7 @@
 @import './font.scss';
 @import './popUpTable.scss';
 @import './loadingEvent.scss';
+@import './resizer.scss';
 
 *{
   font-family: 'avinirNext';
@@ -22,6 +23,9 @@
     padding: 8px;
     text-align: right;
   }
+  th{
+    position: relative;
+  }
   td:first-child, th:first-child{
     text-align: left;
   }
@@ -32,6 +36,9 @@
   .first-row:last-child{
     text-align: center;
   }
+  .thousand{
+    font-style: italic;
+  }
   tbody{
     background-color: $table-color;
     td:hover{
@@ -39,5 +46,3 @@
     }
   }
 }
-
-

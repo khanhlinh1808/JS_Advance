@@ -1,5 +1,5 @@
 export default dataLoader;
-
+import negativeColor from './negativeColor.js'
 const QUERY_DATA_LOADER = 'table tbody';
 
 function dataLoader(dataset) {
@@ -38,7 +38,7 @@ function dataLoader(dataset) {
        <td>${shares}</td>
        <td>${percentage}%</td>
        <td>${lastUpdate}</td>
-       <td ${shareVolume < 0 ? 'style="color: red"' : ''}>
+       <td style="color:${negativeColor(shareVolume)}">
        ${shareVolume}
        </td>
        <td>${priceRange.start} - ${priceRange.end}</td>
